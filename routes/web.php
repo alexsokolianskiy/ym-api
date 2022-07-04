@@ -2,6 +2,8 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use App\Http\Controllers\AuthController;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,6 +15,11 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['prefix' => 'api'], function () use ($router) {
+    $router->group(['prefix' => 'user'], function () use ($router) {
+        $router->post('register', 'AuthController@register');
+        $router->post('signin', 'AuthController@login');
+        $router->post('recover-password', 'AuthController@recoverRequest');
+        $router->patch('recover-password', 'AuthController@recoverPassword');
+    });
 });

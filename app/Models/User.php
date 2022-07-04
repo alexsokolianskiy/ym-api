@@ -30,4 +30,20 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
     ];
+
+    /**
+     * Get user tokens relations
+     */
+    public function tokens()
+    {
+        return $this->hasMany(UserToken::class);
+    }
+
+    /**
+     * Get user recover token
+     */
+    public function recoverToken()
+    {
+        return $this->hasMany(UserRecoverToken::class);
+    }
 }
