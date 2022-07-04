@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": "^8.0",
+        "jslmariano/lumen-routes-list": "^1.0",
         "laravel/lumen-framework": "^9.0"
     },
     "require-dev": {

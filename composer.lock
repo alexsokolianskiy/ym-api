@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "646073c358984833dfa9a8ff690af567",
+    "content-hash": "a4aa122a7bb34db7841f2c3cff2e7e5c",
     "packages": [
         {
             "name": "brick/math",
@@ -1979,6 +1979,47 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2022-06-27T13:42:16+00:00"
+        },
+        {
+            "name": "jslmariano/lumen-routes-list",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jslmariano/lumen-routes-list.git",
+                "reference": "c4d0d2619e54b6941042445522e1dce854eaa653"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jslmariano/lumen-routes-list/zipball/c4d0d2619e54b6941042445522e1dce854eaa653",
+                "reference": "c4d0d2619e54b6941042445522e1dce854eaa653",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jslmariano\\LumenRoutesList\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josel mariano",
+                    "email": "jslmariano@gmail.com"
+                }
+            ],
+            "description": "Display the route list of Lumen",
+            "keywords": [
+                "lumen",
+                "route list"
+            ],
+            "support": {
+                "issues": "https://github.com/jslmariano/lumen-routes-list/issues",
+                "source": "https://github.com/jslmariano/lumen-routes-list/tree/1.0.0"
+            },
+            "time": "2022-02-10T09:25:13+00:00"
         },
         {
             "name": "laravel/lumen-framework",
